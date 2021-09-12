@@ -44,10 +44,15 @@ li {
 
 body {
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 600;
   background-color: #f1f1f1;
+  font-family: var(--font-Nino);
 }
-
+.categories-subheader svg {
+  border: 3px solid #75b443;
+  border-radius: 100px;
+  padding: 10px;
+}
 button {
   margin: 0;
   padding: 0;
@@ -429,7 +434,7 @@ a {
 .slider {
   height: 488px;
   width: 100%;
-    overflow: hidden;
+  overflow: hidden;
   position: relative;
   border-radius: 2rem;
 }
@@ -583,16 +588,12 @@ a {
 
 .button {
   border-radius: 8px;
-  width: 16.6rem;
-  height: 4.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #fff;
   font-family: var(--font-Nino);
   font-size: 1.6rem;
   font-weight: 600;
   outline: none;
+  text-decoration: underline;
   padding-top: 5px;
   cursor: pointer;
 }
@@ -834,7 +835,9 @@ a {
   margin: auto;
   margin-top: 3rem;
 }
-.categories-footer-buttons .button {
+.categories-footer-buttons .button,
+.categories-footer-buttons2 .button,
+.categories-footer-buttons3 .button{
   padding: 1rem 3rem;
   background-color: #ececec;
   border-radius: 2.1rem;
@@ -916,6 +919,7 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 2.6rem;
+  text-decoration: underline;
 }
 
 .first-footer-wrap-box a svg {
@@ -989,7 +993,6 @@ a {
   font-size: 1.6rem;
 }
 
-
 .second-footer-wrap .footer-left span {
   font-size: 2.2rem;
 }
@@ -1038,7 +1041,7 @@ a {
 
 
 .footer-right .footer-input button {
-  width: 21rem;
+  width: 26rem;
   height: 5.6rem;
   background-color: #507d2c;
   cursor: pointer;
