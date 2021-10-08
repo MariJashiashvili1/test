@@ -302,6 +302,25 @@ a {
   cursor: pointer;
 }
 
+
+.search-drop::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+.search-drop::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+ 
+.search-drop::-webkit-scrollbar-thumb {
+    background-color: #d4aa70;
+    border-radius: 100px;
+}
+
+.search-drop {
+    scrollbar-color: #D4AA70 #e4e4e4;
+}
+
 .navbar {
   height: 490px;
   background-color: #f5f5f5;
@@ -1141,7 +1160,6 @@ a {
 
 /* Contact Section */
   .contact-box {
-    margin-top: 5rem;
     justify-content: flex-start;
   }
 
@@ -1946,7 +1964,8 @@ a {
   }
 
   .first-footer {
-    height: 750px;
+    height: 490px;
+    padding: 2rem;
   }
 
   .first-footer-wrap {
@@ -1959,9 +1978,9 @@ a {
     padding-left: 6vw;
   }
 
-  .first-footer .footer-logobox {
+  /* .first-footer .footer-logobox {
     display: none;
-  }
+  } */
 
   .first-footer-wrap-box h3 {
     margin: 0;
@@ -2039,6 +2058,10 @@ a {
   }
 
 
+    .footer-right h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
   .slide-viewer {
     height: 50vw;
   }
@@ -2196,7 +2219,17 @@ a {
   .cat-carditem:nth-child(3) {
     display: none;
   }
+    .first-footer {
+    height: 490px;
+    padding: 2rem;
+  }
   
+}
+@media (max-width: 540px){
+     .first-footer {
+    height: 520px;
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2251,6 +2284,7 @@ a {
   
   .products-list .card-item {
     height: 160px;
+    margin: auto;
   }
 
   .categories-subheader {
@@ -2270,6 +2304,14 @@ a {
   }
   .header .catalog .only-text {
     display: none;
+  }
+     .first-footer {
+    height: 590px;
+    padding: 2rem;
+  }
+  .footer-right h3 {
+    text-align: center;
+    font-size: 2rem;
   }
 }
 
@@ -2329,4 +2371,58 @@ a {
     margin-bottom: -4.5rem;
   }
 
+}
+
+@media (max-width: 400px) {
+   .main {
+    margin-top: 0.5rem;
+    margin-bottom: -5.5rem;
+  }
+
+  .searchbox {
+    max-width: 1400px;
+    grid-template-columns: 100px 1fr 160px;
+  }
+
+.searchLogo img {
+    margin: auto;
+    width: 180px;
+    height: 80px;
+  }
+  .searchLogo span {
+    display: none;
+  }
+  .products-list .card-item {
+    margin: auto;
+    height: 140px;
+  }
+  .products-header {
+    width: 90vw;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .products-footer-owl {
+    height: 4rem;
+    width: 4rem;
+  }
+  .categories-wrap-seeall {
+    font-size: 1.5rem;
+  }
+  .categories-footer-seal {
+    height: 4rem;
+    width: 100%;
+  }
+    .categories-footer-seal span {
+      font-size: 1.5rem;
+    }
+    .footer-right h3 {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .catalog,
+  .share span {
+    display: none;
+  }
 }
